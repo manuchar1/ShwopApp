@@ -1,6 +1,7 @@
 package com.tbcacademy.shwopapp.di
 
-import com.tbcacademy.shwopapp.repositories.DefaultAuthRepository
+import com.tbcacademy.shwopapp.repositories.AuthRepository
+import com.tbcacademy.shwopapp.repositories.MainRepositoryImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -15,10 +16,15 @@ object RepositoryModule {
 
     @Provides
     @ViewModelScoped
-    fun providesRepo(): DefaultAuthRepository {
-        return DefaultAuthRepository()
+    fun providesRepo(): AuthRepository {
+        return AuthRepository()
     }
 
+    @Provides
+    @ViewModelScoped
+    fun providesMainRepo(): MainRepositoryImpl {
+        return MainRepositoryImpl()
+    }
 
     @Provides
     @ViewModelScoped

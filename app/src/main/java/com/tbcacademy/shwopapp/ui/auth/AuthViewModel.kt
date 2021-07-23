@@ -9,7 +9,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.firebase.auth.AuthResult
 import com.tbcacademy.shwopapp.R
-import com.tbcacademy.shwopapp.repositories.DefaultAuthRepository
+import com.tbcacademy.shwopapp.repositories.AuthRepository
 import com.tbcacademy.shwopapp.utils.Constants.MAX_USERNAME_LENGTH
 import com.tbcacademy.shwopapp.utils.Constants.MIN_PASSWORD_LENGTH
 import com.tbcacademy.shwopapp.utils.Constants.MIN_USERNAME_LENGTH
@@ -23,7 +23,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class AuthViewModel @Inject constructor(
-    private val repository: DefaultAuthRepository,
+    private val repository: AuthRepository,
     private val applicationContext: Context,
     private val dispatcher: CoroutineDispatcher = Dispatchers.Main
 ) : ViewModel() {

@@ -6,12 +6,10 @@
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="register">Register</string>
-
     <string name="if_already_a_member">Already a member? Log in</string>
     <string name="if_not_account_register">New user? Sing up here</string>
     <string name="loading">Loading..</string>
     <string name="submit">submit</string>
-
     <string name="error_password_too_short">The password must be at least %d digits long</string>
     <string name="error_username_too_short">The username can\'t have less than %d characters</string>
     <string name="error_username_too_long">The username can\'t have more than %d characters</string>
@@ -20,5 +18,18 @@
     <string name="error_incorrectly_repeated_password">The passwords do not match</string>
     <string name="error_invalid_credentials">The E-Mail or password is incorrect</string>
     <string name="success_registration">Successfully registered account</string>
+    <string name="bottom_nav_home">home</string>
+    <string name="bottom_nav_search">search</string>
+    <string name="sell">Sell</string>
+    <string name="profile">profile</string>
+    <string name="cart">Cart</string>
+    <string name="show_your_product">Show your product</string>
+    <string name="upload">Upload</string>
+    <string name="description">Description</string>
+    <string name="error_no_image_chosen">Please choose an image for the post</string>
+    <string name="name">Name</string>
+    <string name="common_Ok">OK</string>
+    <string name="common_no">Noo</string>
+    <string name="are_you_sure_delete">Delete? Are you sure?</string>
 
 </resources>

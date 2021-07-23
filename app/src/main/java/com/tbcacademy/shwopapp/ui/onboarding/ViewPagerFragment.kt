@@ -24,6 +24,7 @@ class ViewPagerFragment : BaseFragment<FragmentViewPagerBinding>(FragmentViewPag
             FirstScreen(),
             SecondScreen(),
             ThirdScreen()
+
         )
 
         val adapter = ViewPagerAdapter(
@@ -31,5 +32,7 @@ class ViewPagerFragment : BaseFragment<FragmentViewPagerBinding>(FragmentViewPag
         )
         binding.viewPager.adapter = adapter
     }
+
+
 
 }
