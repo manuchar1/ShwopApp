@@ -1,6 +1,5 @@
 package com.tbcacademy.shwopapp.ui.auth
 
-import android.content.SharedPreferences
 import android.graphics.Color
 import android.os.Bundle
 import android.text.SpannableString
@@ -16,7 +15,6 @@ import com.tbcacademy.shwopapp.R
 import com.tbcacademy.shwopapp.base.BaseFragment
 import com.tbcacademy.shwopapp.base.showProgressButton
 import com.tbcacademy.shwopapp.base.snackbar
-import com.tbcacademy.shwopapp.data.UserPreference
 import com.tbcacademy.shwopapp.databinding.LoginFragmentBinding
 import com.tbcacademy.shwopapp.utils.EventObserver
 import dagger.hilt.android.AndroidEntryPoint
@@ -25,7 +23,6 @@ import dagger.hilt.android.AndroidEntryPoint
 class LoginFragment : BaseFragment<LoginFragmentBinding>(LoginFragmentBinding::inflate) {
 
     val viewModel: AuthViewModel by activityViewModels()
-    lateinit var sharedPreferences: UserPreference
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -53,11 +50,7 @@ class LoginFragment : BaseFragment<LoginFragmentBinding>(LoginFragmentBinding::i
 
             ) {
             binding.btnLogin.hideProgress(R.string.login)
-
-            sharedPreferences = UserPreference(requireContext())
-            sharedPreferences.saveUserSession(true)
-            sharedPreferences.saveToken("login")
-            findNavController().navigate(R.id.action_loginFragment_to_navHomeFragment)
+            snackbar(getString(R.string.success_registration))
 
         })
 

@@ -13,7 +13,7 @@ class SecondScreen : BaseFragment<FragmentSecondBinding>(FragmentSecondBinding::
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val viewPager = activity?.findViewById<ViewPager2>(R.id.ivImage)
+        val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager)
         binding.tvNext2.setOnClickListener {
             viewPager?.currentItem = 2
         }

@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "30726533578",
-    "project_id": "shwop-c4b3b",
-    "storage_bucket": "shwop-c4b3b.appspot.com"
+    "project_number": "138022896348",
+    "project_id": "shwop-ab473",
+    "storage_bucket": "shwop-ab473.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:30726533578:android:ac14bb32768279aa33df33",
+        "mobilesdk_app_id": "1:138022896348:android:07d9afebd91524aa91ea19",
         "android_client_info": {
           "package_name": "com.tbcacademy.shwopapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "30726533578-3m03kn93splkqlsrq241oraud4scn21v.apps.googleusercontent.com",
+          "client_id": "138022896348-tokh203t4beqs6crssb7qjshg49se46q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tbcacademy.shwopapp",
+            "certificate_hash": "bec001e971ad25b7cd829381238926daa9d2b90c"
+          }
+        },
+        {
+          "client_id": "138022896348-rfihpk68i6f6pngssdljhidnkdqsrkin.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCqp0HG7ySpeMGUuG4nYsMv2rCM_QtMqTM"
+          "current_key": "AIzaSyCUj5bp2R3giqSQ1ZQ-vrqsjso6XVlh2wE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "30726533578-3m03kn93splkqlsrq241oraud4scn21v.apps.googleusercontent.com",
+              "client_id": "138022896348-rfihpk68i6f6pngssdljhidnkdqsrkin.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

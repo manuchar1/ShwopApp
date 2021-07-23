@@ -2,8 +2,8 @@ package com.tbcacademy.shwopapp.di
 
 
 
-
 import com.tbcacademy.shwopapp.repositories.AuthRepository
+import com.tbcacademy.shwopapp.repositories.DefaultAuthRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -17,5 +17,5 @@ object AuthModule {
 
     @ActivityScoped
     @Provides
-    fun provideAuthRepository() = AuthRepository()
+    fun provideAuthRepository() = DefaultAuthRepository() as AuthRepository
 }

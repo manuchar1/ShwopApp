@@ -20,11 +20,6 @@
             app:destination="@id/loginFragment"
             app:popUpTo="@id/splashFragment"
             app:popUpToInclusive="true" />
-        <action
-            android:id="@+id/action_splashFragment_to_navHomeFragment"
-            app:destination="@id/navHomeFragment"
-            app:popUpTo="@id/splashFragment"
-            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/viewPagerFragment"
@@ -45,13 +40,6 @@
         <action
             android:id="@+id/action_loginFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
-        <action
-            android:id="@+id/action_loginFragment_to_navHomeFragment"
-            app:destination="@id/navHomeFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -62,23 +50,4 @@
             android:id="@+id/action_registerFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/navHomeFragment"
-        android:name="com.tbcacademy.shwopapp.ui.bottom_navigation.NavHomeFragment"
-        android:label="fragment_nav_home"
-        tools:layout="@layout/fragment_nav_home" />
-    <fragment
-        android:id="@+id/createPostFragment"
-        android:name="com.tbcacademy.shwopapp.ui.bottom_navigation.sell_product.CreatePostFragment"
-        android:label="create_post_fragment"
-        tools:layout="@layout/create_post_fragment" />
-
-    <action
-        android:id="@+id/action_global_createPostFragment"
-        app:destination="@id/createPostFragment"
-        app:enterAnim="@anim/slide_in_bottom"
-        app:popEnterAnim="@anim/slide_in_left"
-        app:popExitAnim="@anim/slide_out_bottom"/>
-
-    <include app:graph="@navigation/main_navigation" />
 </navigation>

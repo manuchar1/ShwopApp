@@ -12,7 +12,7 @@ class FirstScreen : BaseFragment<FragmentFirstScreenBinding>(FragmentFirstScreen
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-        val viewPager = activity?.findViewById<ViewPager2>(R.id.ivImage)
+        val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager)
         binding.btnNext.setOnClickListener {
             viewPager?.currentItem = 1
         }
