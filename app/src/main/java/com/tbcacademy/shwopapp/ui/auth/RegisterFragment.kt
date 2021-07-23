@@ -52,6 +52,8 @@ class RegisterFragment : BaseFragment<RegisterFragmentBinding>(RegisterFragmentB
             },
             onLoading = {
                 showProgressButton(binding.btnRegister)
+                snackbar(getString(R.string.success_registration))
+                findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
 
             }
 
